@@ -21,17 +21,13 @@
 		isFlashing = true;
 		showInsult = false; 
 
-		// 1. Instant Whiteout 
 		setTimeout(() => {
-			// 2. Start recovering vision 
 			isFlashing = false;
 			
-			// 3. Show the insult + Play Second Sound
 			setTimeout(() => {
 				showInsult = true;
-                playMockerySound(); // <--- Trigger the second sound here
+                playMockerySound();
 				
-				// 4. Hide insult after 6 seconds
 				setTimeout(() => {
 					showInsult = false;
 				}, 3200);

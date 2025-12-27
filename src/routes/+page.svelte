@@ -2,6 +2,7 @@
   import ComparisonTable from "$lib/ComparisonTable.svelte";
   import Flashbang from "$lib/Flashbang.svelte";
   import ToxicTux from "$lib/ToxicTux.svelte";
+  import unhingedTux from '$lib/assets/unhinged_tux.png';
 
   let angerLevel: number = $state(0);
   let timeSaved = $derived(angerLevel * 4.5);
@@ -28,6 +29,22 @@
 
 <svelte:head>
   <title>Just Fucking Use CachyOS</title>
+  <meta name="description" content="Stop using slow distros." />
+  <meta name="keywords" content="Arch Linux, CachyOS, Linux Distro, Performance, BORE Scheduler, x86-64-v3" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://justfuckingusecachyos.com/" />
+  <meta property="og:title" content="JUST FUCKING USE CACHYOS" />
+  <meta
+    property="og:description"
+    content="Facts don't care about your feelings"
+  />
+  <meta
+    property="og:image"
+    content={unhingedTux}
+  />
+  <meta property="twitter:title" content="JUST FUCKING USE CACHYOS" />
+  <meta property="twitter:description" content="Friends don't let friends use stock kernels." />
+  <link rel="canonical" href="https://justfuckingusecachyos.com/"/>
 </svelte:head>
 
 <Flashbang />

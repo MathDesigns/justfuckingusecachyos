@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
     import unhingedTux from '$lib/assets/unhinged_tux.png';
 
-	// Svelte 5 Runes
 	let isVisible = $state(false);
 	let message = $state("");
 	let position = $state({ top: 110, left: 110 }); 
